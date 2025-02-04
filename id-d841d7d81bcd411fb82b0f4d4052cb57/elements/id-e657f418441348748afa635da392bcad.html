@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>RetailOne Server</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>RetailOne Server</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Node"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Node" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
+                    	<li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab" class="i18n-analysis"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="used-in-views-id-172951ee33db4669a71e0f109afac1e6">
+																	<td><a href="../views/id-172951ee33db4669a71e0f109afac1e6.html" target="view" title="Target Technical Architecture Kobie"> Target Technical Architecture Kobie </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td><a href="../elements/id-5508f2d76d924a699fa88c92f00e8636.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+											<td><a href="../elements/id-96a0167017fe4d4f8f6c4a66e52ea28e.html" target="element"> Kobie</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-a6dfe80811fd49fd83e81042e61b7f7c.html" target="element" title="New customer loyalty tier">New customer loyalty tier</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+											<td><a href="../elements/id-5f7a73c00c194f94bd6123329c7bc330.html" target="element"> Talend Cloud Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-d579c351fd1149958dc7a4e527833963.html" target="element" title="Send loyalty data">Send loyalty data</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+											<td><a href="../elements/id-fbf09d9c7b1943b68f8133b11451f845.html" target="element"> MFT Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-ae406c9f37fb4fcd8ea086df0e4ec9d8.html" target="element" title="Request user identity">Request user identity</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+											<td><a href="../elements/id-cecfd621410241f380cc109da42e13cc.html" target="element"> AD Server</a></td>
+										</tr>
+									<tr>
+											<td><a href="../elements/id-a12b0338a6ab411e8511f3f05ac6e83f.html" target="element" title="NHE + CT">NHE + CT</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-5f7a73c00c194f94bd6123329c7bc330.html" target="element"> Talend Cloud Server</a></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-3e052d43222143ecb06bcf796c80a7bb.html" target="element" title="Send ecommerce transactions">Send ecommerce transactions</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-fbf09d9c7b1943b68f8133b11451f845.html" target="element"> MFT Server</a></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-cafac994f6ce473fa1f2d8446574bcf0.html" target="element" title="Send transactions">Send transactions</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-fbf09d9c7b1943b68f8133b11451f845.html" target="element"> MFT Server</a></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-537eda2bce204f68ad06828450f15e5c.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
+											<td><a href="../elements/id-caba2843fe334f1cbfaf26fdcb6b772b.html" target="element"> Azure VPC</a></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-941ae3015b0e45599a21d97d9f7f902f.html" target="element" title="Customer segment">Customer segment</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-5f7a73c00c194f94bd6123329c7bc330.html" target="element"> Talend Cloud Server</a></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-4ca94f680a164e978d1b769214565c80.html" target="element" title="Unified Customer Profiles">Unified Customer Profiles</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-0ae3db92faf343f8b67025025ad73696.html" target="element"> Talend DMZ Server</a></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-0136ce6e694b47ffa98f77aa5b5dd506.html" target="element" title="Request loyalty data">Request loyalty data</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-f64f8135c4054597832736e7c1a74200.html" target="element"> Smartphone</a></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-21128d794cfe419989a7940e82223701.html" target="element" title="Request loyalty data">Request loyalty data</a></td>
+											<td><span class="i18n-elementtype-FlowRelationship" /></td>
+											<td><a href="../elements/id-5f7a73c00c194f94bd6123329c7bc330.html" target="element"> Talend Cloud Server</a></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-120eb725b9974c3d8460335a6493f29e.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
+											<td><a href="../elements/id-849fa68e62774918a1b73785222b4eba.html" target="element"> Laptop</a></td>
+											<td><a href="../elements/id-e657f418441348748afa635da392bcad.html" target="element"> RetailOne Server</a></td>
+										</tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
